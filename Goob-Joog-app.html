@@ -2409,4 +2409,29 @@ window.addEventListener('orientationchange', setAppHeight);
 })();
 </script>
 </body>
+      <!-- Firebase SDK (Version 10) -->
+    <script type="module">
+    // Import-ka saxda ah ee loogu talagalay browser-ka
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyB6CwaU135Wum5odJcMEpHIYipTTlNpxGM",
+      authDomain: "goob-joog.firebaseapp.com",
+      projectId: "goob-joog",
+      storageBucket: "goob-joog.firebasestorage.app",
+      messagingSenderId: "745046849703",
+      appId: "1:745046849703:web:1edb77741404a0d3efc382",
+      measurementId: "G-39Q2J5PYXE"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    
+    console.log("Firebase iyo Analytics waa la xiray!");
+</script>
+
+
 </html>
